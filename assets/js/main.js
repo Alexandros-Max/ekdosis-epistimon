@@ -78,26 +78,6 @@
     ResponsiveMobilemsMenu();
 
     /*== Main Slider ==*/
-    // var mnMainSlider = new Swiper('.mn-hero', {
-    //     loop: true,
-    //     speed: 2000,
-    //     autoplay: false,
-    //     effect: "slide",
-
-    //     autoplay: {
-    //         delay: 7000,
-    //         disableOnInteraction: false,
-    //     },
-    //     pagination: {
-    //         el: '.swiper-pagination',
-    //         clickable: true,
-    //     },
-
-    //     navigation: {
-    //         nextEl: '.swiper-button-next',
-    //         prevEl: '.swiper-button-prev',
-    //     }
-    // });
     $('.mn-hero-slider').owlCarousel({
         margin: 0,
         loop: true,
@@ -105,6 +85,7 @@
         nav: true,
         smartSpeed: 1500,
         autoplay: true,
+        autoplayHoverPause:true,
         items: 1,
         responsiveClass: true,
     });
@@ -289,7 +270,7 @@
     });
 
     $('.single-nav-thumb').slick({
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.single-product-cover',
         dots: false,
@@ -390,10 +371,12 @@
         responsiveClass: true,
         responsive: {
             0: {
-                items: 1,
+                items: 1.5,
+                margin: 12,
             },
             421: {
-                items: 2,
+                items: 1.5,
+                margin: 12,
             },
             768: {
                 items: 3,
@@ -461,11 +444,11 @@
         responsiveClass: true,
         responsive: {
             0: {
-                items: 1,
-                dots: false,
+                items: 1.5,
+                margin: 12,
             },
             461: {
-                items: 2,
+                items: 1.5,
             },
             768: {
                 items: 3,
