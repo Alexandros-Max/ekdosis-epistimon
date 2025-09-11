@@ -625,7 +625,7 @@
 								<!-- mn-breadcrumb-list start -->
 								<ul class="mn-breadcrumb-list">
 									<li class="mn-breadcrumb-item"><a href="index.html">Αρχική</a></li>
-									<li class="mn-breadcrumb-item active"><h1 class="mn-breadcrumb-title">Σύνδεση</h1></li>
+									<li class="mn-breadcrumb-item active"><h1 class="mn-breadcrumb-title">Όλοκλήρωση παραγγελίας</h1></li>
 								</ul>
 								<!-- mn-breadcrumb-list end -->
 							</div>
@@ -634,51 +634,315 @@
 				</div>
 			</div>
 
-
-			<section class="mn-register p-b-15">
+			<!-- Checkout section -->
+			<section class="mn-checkout-section p-b-15">
+				<h2 class="d-none">Checkout Page</h2>
 				<div class="row">
-					<div class="mn-register-wrapper">
-						<div class="mn-register-container">
-							<div class="mn-register-form">
-								<div class="mn-title p-b-15">
-									<h2 class="h4">Είσοδος στον Λογαριασμό σας</h2>
-								</div>
-								<form action="#" method="post">
-									<span class="mn-register-wrap">
-										<label>Email *</label>
-										<input type="email" name="email" placeholder="π.χ. info@gmail.com" required="">
-									</span>
-									<span class="mn-register-wrap">
-										<label>Κωδικός *</label>
-										<input type="password" name="password" autocomplete="" placeholder="********" aria-autocomplete="list">
-									</span>
-									<span class="mn-register-wrap mn-recaptcha">
-										<span class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></span>
-										<input class="form-control d-none" data-recaptcha="true" required="" data-error="Please complete the Captcha">
-										<span class="help-block with-errors"></span>
-									</span>
-									<span class="mn-register-wrap mn-register-btn">
-										<button class="mn-btn-1" type="submit"><span>Σύνδεση</span></button>
-									</span>
+					<div class="mn-checkout-leftside col-lg-8 col-md-12">
+						<!-- checkout content Start -->
+						<div class="mn-checkout-content">
+							<div class="mn-checkout-inner">
+								<div class="mn-checkout-wrap m-b-30">
+									<div class="mn-checkout-block mn-check-new">
+										<h3 class="mn-checkout-title">New Customer</h3>
+										<div class="mn-check-block-content">
+											<div class="mn-check-subtitle">Checkout Options</div>
+											<form action="#">
+												<span class="mn-new-option">
+													<span class="m-b-15">
+														<input type="radio" id="account1" name="radio-group" checked>
+														<label for="account1">Register Account</label>
+													</span>
+													<span class="m-b-15">
+														<input type="radio" id="account2" name="radio-group">
+														<label for="account2">Guest Account</label>
+													</span>
+												</span>
+											</form>
+											<div class="mn-new-desc">By creating an account you will be able to shop
+												faster,
+												be up to date on an order's status, and keep track of the orders you
+												have
+												previously made.
+											</div>
+											<div class="mn-new-btn"><a href="#"
+													class="mn-btn-2"><span>Continue</span></a></div>
 
-									<div class="mn-register-wrap mn-register-btn m-t-15">
-										<span class="mn-login-wrap mn-login-fp">
-											<label><a href="#">Ξεχάσατε τον κωδικό σας;</a></label>
-										</span>
-										
-										<span>Δεν έχετε λογαριασμό; <a href="register.html">Εγγραφή</a></span>
+										</div>
 									</div>
-									
-								</form>
+									<div class="mn-checkout-block mn-check-login">
+										<h3 class="mn-checkout-title">Returning Customer</h3>
+										<div class="mn-check-login-form">
+											<form action="#" method="post">
+												<span class="mn-check-login-wrap">
+													<label>Email Address</label>
+													<input type="text" name="name"
+														placeholder="Enter your email address" required>
+												</span>
+												<span class="mn-check-login-wrap">
+													<label>Password</label>
+													<input type="password" name="password"
+														placeholder="Enter your password" required>
+												</span>
 
+												<span class="mn-check-login-wrap mn-check-login-btn">
+													<button class="mn-btn-2" type="submit"><span>Login</span></button>
+													<a class="mn-check-login-fp" href="#">Forgot Password?</a>
+												</span>
+											</form>
+										</div>
+									</div>
+
+								</div>
+								<div class="mn-checkout-wrap m-b-30 padding-bottom-3">
+									<div class="mn-checkout-block mn-check-bill">
+										<h3 class="mn-checkout-title">Billing Details</h3>
+										<div class="mn-bl-block-content">
+											<div class="mn-check-subtitle">Checkout Options</div>
+											<span class="mn-bill-option">
+												<span class="m-b-15">
+													<input type="radio" id="bill1" name="radio-group">
+													<label for="bill1">I want to use an existing address</label>
+												</span>
+												<span class="m-b-15">
+													<input type="radio" id="bill2" name="radio-group" checked>
+													<label for="bill2">I want to use new address</label>
+												</span>
+											</span>
+											<div class="mn-check-bill-form">
+												<form action="#" method="post">
+													<span class="mn-bill-wrap mn-bill-half">
+														<label>First Name*</label>
+														<input type="text" name="firstname"
+															placeholder="Enter your first name" required>
+													</span>
+													<span class="mn-bill-wrap mn-bill-half">
+														<label>Last Name*</label>
+														<input type="text" name="lastname"
+															placeholder="Enter your last name" required>
+													</span>
+													<span class="mn-bill-wrap">
+														<label>Address</label>
+														<input type="text" name="address" placeholder="Address Line 1">
+													</span>
+													<span class="mn-bill-wrap mn-bill-half">
+														<label>City *</label>
+														<span class="mn-bl-select-inner">
+															<select name="gi_select_city" id="mn-select-city"
+																class="mn-bill-select">
+																<option selected disabled>City</option>
+																<option value="1">City 1</option>
+																<option value="2">City 2</option>
+																<option value="3">City 3</option>
+																<option value="4">City 4</option>
+																<option value="5">City 5</option>
+															</select>
+														</span>
+													</span>
+													<span class="mn-bill-wrap mn-bill-half">
+														<label>Post Code</label>
+														<input type="text" name="postalcode" placeholder="Post Code">
+													</span>
+													<span class="mn-bill-wrap mn-bill-half">
+														<label>Country *</label>
+														<span class="mn-bl-select-inner">
+															<select name="gi_select_country" id="mn-select-country"
+																class="mn-bill-select">
+																<option selected disabled>Country</option>
+																<option value="1">Country 1</option>
+																<option value="2">Country 2</option>
+																<option value="3">Country 3</option>
+																<option value="4">Country 4</option>
+																<option value="5">Country 5</option>
+															</select>
+														</span>
+													</span>
+													<span class="mn-bill-wrap mn-bill-half">
+														<label>Region State</label>
+														<span class="mn-bl-select-inner">
+															<select name="gi_select_state" id="mn-select-state"
+																class="mn-bill-select">
+																<option selected disabled>Region/State</option>
+																<option value="1">Region/State 1</option>
+																<option value="2">Region/State 2</option>
+																<option value="3">Region/State 3</option>
+																<option value="4">Region/State 4</option>
+																<option value="5">Region/State 5</option>
+															</select>
+														</span>
+													</span>
+												</form>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
 							</div>
+						</div>
+						<!--cart content End -->
+					</div>
+					<!-- Sidebar Area Start -->
+					<div class="mn-checkout-rightside col-lg-4 col-md-12 m-t-991">
+						<div class="mn-sidebar-wrap">
+							<!-- Sidebar Summary Block -->
+							<div class="mn-sidebar-block">
+								<div class="mn-sb-title">
+									<div class="mn-sidebar-title">Στοιχεία παραγγελίας</div>
+								</div>
+								
+								<div class="mn-sb-block-content">
+									
+									<div class="mn-checkout-pro">
+										<div class="col-sm-12 mb-0">
+											<div class="mn-product-inner">
+												<div class="mn-pro-image-outer">
+													<div class="mn-pro-image">
+														<a href="product.html" class="image">
+															<img class="main-image" src="assets/img/prod-1.jpg" alt="Product">
+														</a>
+													</div>
+												</div>
+												<div class="mn-pro-content">
+													<div class="mn-pro-isbn"><a href="product.html">9789925350131</a></div>
+													<div class="mn-pro-title h6"><a href="product.html">Τίτλος βιβλίου</a></div>
+													<span class="mn-price">
+														<span class="new-price">250,00&euro;</span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-12 mb-0">
+											<div class="mn-product-inner">
+												<div class="mn-pro-image-outer">
+													<div class="mn-pro-image">
+														<a href="product.html" class="image">
+															<img class="main-image" src="assets/img/prod-1.jpg" alt="Product">
+														</a>
+													</div>
+												</div>
+												<div class="mn-pro-content">
+													<div class="mn-pro-isbn"><a href="product.html">9789925350131</a></div>
+													<div class="mn-pro-title h6"><a href="product.html">Τίτλος βιβλίου</a></div>
+													<span class="mn-price">
+														<span class="new-price">250,00&euro;</span>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mn-checkout-summary">
+										<div>
+											<span class="text-left">Αξία Προϊόντων</span>
+											<span class="text-right">734,00&euro;</span>
+										</div>
+										<div>
+											<span class="text-left">Μεταφορικά</span>
+											<span class="text-right">4,00&euro;</span>
+										</div>
+										<div>
+											<span class="text-left">Αντικαταβολή</span>
+											<span class="text-right">3,00&euro;</span>
+										</div>
+										<div class="mn-checkout-summary-total">
+											<span class="text-left">Σύνολο </span>
+											<span class="text-right">745,00&euro;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Sidebar Summary Block -->
+						</div>
+						<div class="mn-sidebar-wrap mn-checkout-del-wrap">
+							<!-- Sidebar Summary Block -->
+							<div class="mn-sidebar-block">
+								<div class="mn-sb-title">
+									<div class="mn-sidebar-title">Τρόποι αποστολής</div>
+								</div>
+								<div class="mn-sb-block-content">
+									<div class="mn-checkout-del">
+										<form action="#">
+											<span class="mn-del-option">
+												<span>
+													<span class="mn-del-opt-head">Παραλαβή από το κατάστημα</span>
+													<input type="radio" id="del1" name="radio-group">
+													<label for="del1">Δωρεάν</label>
+												</span>
+												<span>
+													<span class="mn-del-opt-head">Αποστολή στον χώρο σας</span>
+													<input type="radio" id="del2" name="radio-group">
+													<label for="del2">4,00&euro;</label>
+												</span>
+											</span>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!-- Sidebar Summary Block -->
+						</div>
+						<div class="mn-sidebar-wrap mn-checkout-del-wrap">
+							<!-- Sidebar Payment Block -->
+							<div class="mn-sidebar-block">
+								<div class="mn-sb-title">
+									<div class="mn-sidebar-title">Τρόποι πληρωμής</div>
+								</div>
+								<div class="mn-sb-block-content">
+									<div class="mn-checkout-pay">
+										<form action="#">
+											<span class="mn-pay-option m-b-15">
+												<span>
+													<input type="radio" id="pay1" name="radio-group">
+													<label for="pay1">Πληρωμή στο κατάστημα</label>
+												</span>
+											</span>
+											<span class="mn-pay-option m-b-15">
+												<span>
+													<input type="radio" id="pay2" name="radio-group">
+													<label for="pay2">Πληρωμή με κάρτα</label>
+												</span>
+											</span>
+											<span class="mn-pay-option m-b-15">
+												<span>
+													<input type="radio" id="pay3" name="radio-group">
+													<label for="pay3">Τραπεζική κατάθεση</label>
+												</span>
+											</span>
+											<span class="mn-pay-option m-b-15">
+												<span>
+													<input type="radio" id="pay4" name="radio-group">
+													<label for="pay4">Αντικαταβολή</label>
+												</span>
+											</span>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!-- Sidebar Payment Block -->
+						</div>
+						<div class="mn-sidebar-wrap mn-checkout-del-wrap">
+							<!-- Sidebar Payment Block -->
+							<div class="mn-sidebar-block">
+								<div class="mn-sb-block-content">
+									<span class="mn-pay-commemt m-t-30">
+										<span class="mn-pay-opt-head">Σχόλια</span>
+										<textarea name="your-commemt" placeholder="Γράψτε μας, αν έχετε κάποιο σχόλιο για την παραγγελία σας..."></textarea>
+									</span>
+									<span class="mn-pay-agree">
+										<input type="checkbox" value="">
+										Αποδέχομαι τους <a href="text.html" target="_blank">όρους χρήσης</a> και την <a href="text.html" target="_blank"> πολιτική προσωπικών δεδομένων</a>.
+										<span class="checked"></span>
+									</span>
+									
+									<span class="mn-check-order-btn">
+										<a class="mn-btn-2" href="#"><span>Πληρωμή</span></a>
+									</span>
+								</div>
+							</div>
+							<!-- Sidebar Payment Block -->
 						</div>
 					</div>
 				</div>
 			</section>
-
-
-
 
 		</div>
 

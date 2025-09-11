@@ -625,7 +625,7 @@
 								<!-- mn-breadcrumb-list start -->
 								<ul class="mn-breadcrumb-list">
 									<li class="mn-breadcrumb-item"><a href="index.html">Αρχική</a></li>
-									<li class="mn-breadcrumb-item active"><h1 class="mn-breadcrumb-title">Σύνδεση</h1></li>
+									<li class="mn-breadcrumb-item active"><h1 class="mn-breadcrumb-title">Καλάθι</h1></li>
 								</ul>
 								<!-- mn-breadcrumb-list end -->
 							</div>
@@ -634,51 +634,168 @@
 				</div>
 			</div>
 
-
-			<section class="mn-register p-b-15">
+			<!-- Cart section -->
+			<section class="mn-cart-section p-b-15">
 				<div class="row">
-					<div class="mn-register-wrapper">
-						<div class="mn-register-container">
-							<div class="mn-register-form">
-								<div class="mn-title p-b-15">
-									<h2 class="h4">Είσοδος στον Λογαριασμό σας</h2>
+					<div class="mn-cart-leftside col-lg-9 col-md-12">
+						<!-- cart content Start -->
+						<div class="mn-cart-content">
+							<div class="mn-cart-inner cart_list">
+								<div class="row">
+									<form action="#">
+										<div class="table-content cart-table-content">
+											<table>
+												<thead>
+													<tr>
+														<th>Όνομα προϊόντος</th>
+														<th>Τιμή</th>
+														<th style="text-align: center;">Ποσότητα</th>
+														<th>Σύνολο</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="mn-cart-product">
+														<td data-label="Product" class="mn-cart-pro-name">
+															<a href="product-detail.html">
+																<img class="mn-cart-pro-img" src="assets/img/prod-1.jpg" alt="">
+																<div class="cart-prod-info">
+																	<span class="cart-prod-isbn">9789925350131</span>
+																	<span class="cart-prod-title">Τίτλος βιβλίου</span>
+																</div>
+															</a>
+														</td>
+														<td data-label="Price" class="mn-cart-pro-price">
+															<span class="amount">29,00&euro;</span>
+														</td>
+														<td data-label="Quantity" class="mn-cart-pro-qty"
+															style="text-align: center;">
+															<div class="cart-qty-plus-minus">
+																<input class="cart-plus-minus" type="text"
+																	name="cartqtybutton" value="1">
+															</div>
+														</td>
+														<td data-label="Total" class="mn-cart-pro-subtotal">29,00&euro;
+														</td>
+														<td data-label="Remove" class="mn-cart-pro-remove">
+															<a href="#"><i class="ri-close-line"></i></a>
+														</td>
+													</tr>
+													<tr class="mn-cart-product">
+														<td data-label="Product" class="mn-cart-pro-name">
+															<a href="product-detail.html">
+																<img class="mn-cart-pro-img" src="assets/img/prod-2.jpg" alt="">
+																<div class="cart-prod-info">
+																	<span class="cart-prod-isbn">9789925350131</span>
+																	<span class="cart-prod-title">Τίτλος βιβλίου</span>
+																</div>
+															</a>
+														</td>
+														<td data-label="Price" class="mn-cart-pro-price">
+															<span class="amount">34,00&euro;</span>
+														</td>
+														<td data-label="Quantity" class="mn-cart-pro-qty"
+															style="text-align: center;">
+															<div class="cart-qty-plus-minus">
+																<input class="cart-plus-minus" type="text"
+																	name="cartqtybutton" value="1">
+															</div>
+														</td>
+														<td data-label="Total" class="mn-cart-pro-subtotal">34,00&euro;
+														</td>
+														<td data-label="Remove" class="mn-cart-pro-remove">
+															<a href="#"><i class="ri-close-line"></i></a>
+														</td>
+													</tr>
+													<tr class="mn-cart-product">
+														<td data-label="Product" class="mn-cart-pro-name">
+															<a href="product-detail.html">
+																<img class="mn-cart-pro-img" src="assets/img/prod-3.jpg" alt="">
+																<div class="cart-prod-info">
+																	<span class="cart-prod-isbn">9789925350131</span>
+																	<span class="cart-prod-title">Τίτλος βιβλίου</span>
+																</div>
+															</a>
+														</td>
+														<td data-label="Price" class="mn-cart-pro-price">
+															<span class="amount">52,00&euro;</span>
+														</td>
+														<td data-label="Quantity" class="mn-cart-pro-qty"
+															style="text-align: center;">
+															<div class="cart-qty-plus-minus">
+																<input class="cart-plus-minus" type="text"
+																	name="cartqtybutton" value="1">
+															</div>
+														</td>
+														<td data-label="Total" class="mn-cart-pro-subtotal">52,00&euro;
+														</td>
+														<td data-label="Remove" class="mn-cart-pro-remove">
+															<a href="#"><i class="ri-close-line"></i></a>
+														</td>
+													</tr>
+													<tr class="mn-cart-product">
+														<td data-label="Product" class="mn-cart-pro-name">
+															<a href="product-detail.html">
+																<img class="mn-cart-pro-img" src="assets/img/prod-4.jpg" alt="">
+																<div class="cart-prod-info">
+																	<span class="cart-prod-isbn">9789925350131</span>
+																	<span class="cart-prod-title">Τίτλος βιβλίου</span>
+																</div>
+															</a>
+														</td>
+														<td data-label="Price" class="mn-cart-pro-price">
+															<span class="amount">14,00&euro;</span>
+														</td>
+														<td data-label="Quantity" class="mn-cart-pro-qty"
+															style="text-align: center;">
+															<div class="cart-qty-plus-minus">
+																<input class="cart-plus-minus" type="text"
+																	name="cartqtybutton" value="1">
+															</div>
+														</td>
+														<td data-label="Total" class="mn-cart-pro-subtotal">14,00&euro;
+														</td>
+														<td data-label="Remove" class="mn-cart-pro-remove">
+															<a href="#"><i class="ri-close-line"></i></a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</form>
 								</div>
-								<form action="#" method="post">
-									<span class="mn-register-wrap">
-										<label>Email *</label>
-										<input type="email" name="email" placeholder="π.χ. info@gmail.com" required="">
-									</span>
-									<span class="mn-register-wrap">
-										<label>Κωδικός *</label>
-										<input type="password" name="password" autocomplete="" placeholder="********" aria-autocomplete="list">
-									</span>
-									<span class="mn-register-wrap mn-recaptcha">
-										<span class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></span>
-										<input class="form-control d-none" data-recaptcha="true" required="" data-error="Please complete the Captcha">
-										<span class="help-block with-errors"></span>
-									</span>
-									<span class="mn-register-wrap mn-register-btn">
-										<button class="mn-btn-1" type="submit"><span>Σύνδεση</span></button>
-									</span>
+							</div>
+						</div>
+						<!--cart content End -->
+					</div>
+					<!-- Sidebar Area Start -->
+					<div class="mn-cart-rightside col-lg-3 col-md-12 m-t-991">
+						<div class="mn-sidebar-wrap">
+							<!-- Sidebar Summary Block -->
+							<div class="mn-sidebar-block">
+								<div class="mn-sb-title">
+									<div class="h4 mn-sidebar-title">Στοιχεία παραγγελίας</div>
+								</div>
 
-									<div class="mn-register-wrap mn-register-btn m-t-15">
-										<span class="mn-login-wrap mn-login-fp">
-											<label><a href="#">Ξεχάσατε τον κωδικό σας;</a></label>
-										</span>
+								<div class="mn-sb-block-content">
+									<div class="mn-cart-summary-bottom">
+										<div class="mn-cart-summary">
+											<div class="mn-cart-summary-total">
+												<span class="text-left">Σύνολο</span>
+												<span class="text-right">734,00&euro;</span>
+											</div>
+										</div>
 										
-										<span>Δεν έχετε λογαριασμό; <a href="register.html">Εγγραφή</a></span>
+										<div class="mn-cart-update-bottom">
+											<a href="checkout.html" class="mn-btn-2"><span>Ολοκλήρωση παραγγελίας</span></a>
+										</div>
 									</div>
-									
-								</form>
-
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-
-
-
 
 		</div>
 
