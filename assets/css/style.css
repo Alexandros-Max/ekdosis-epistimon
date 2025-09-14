@@ -5507,16 +5507,8 @@ button.btn-close.qty_close {
 }
 .mn-modern-banner .modern-banner .mn-banner-img {
   width: calc(100% - 400px);
-  height: 500px;
   border-radius: 15px;
-  background-size: cover;
-  background-position: center;
-}
-.mn-modern-banner .modern-banner .mn-banner-img.img-1 {
-  background-image: url("../img/banner/1.jpg");
-}
-.mn-modern-banner .modern-banner .mn-banner-img.img-2 {
-  background-image: url("../img/banner/2.jpg");
+  overflow: hidden;
 }
 .mn-modern-banner .modern-banner .mn-banner-contact {
   width: 370px;
@@ -5781,9 +5773,6 @@ button.btn-close.qty_close {
   .mn-modern-banner .owl-dots {
     right: 315px;
   }
-  .mn-modern-banner .modern-banner .mn-banner-img {
-    height: 400px;
-  }
   .mn-banner-contact .inner-banner .h4 {
     font-size: 52px;
   }
@@ -5795,18 +5784,11 @@ button.btn-close.qty_close {
   }
 }
 @media screen and (max-width: 991px) {
-  .mn-banner-img img {
-    border-top-left-radius: 500px;
-    border-top-right-radius: 500px;
-    border-bottom-left-radius: 500px;
-    border-bottom-right-radius: 500px;
-  }
   .mn-modern-banner .owl-dots {
     display: none;
   }
   .mn-modern-banner .modern-banner .mn-banner-img {
     width: 100%;
-    background-position: left;
   }
   .mn-modern-banner .modern-banner .mn-banner-contact {
     width: 100%;
@@ -5840,9 +5822,6 @@ button.btn-close.qty_close {
   }
 }
 @media screen and (max-width: 767px) {
-  .mn-modern-banner .modern-banner .mn-banner-img {
-    height: 300px;
-  }
   .mn-banner-contact .inner-banner .h4 {
     font-size: 40px;
   }
@@ -5872,9 +5851,6 @@ button.btn-close.qty_close {
   }
   .mn-banner-contact .inner-text .bnr-text {
     font-size: 18px;
-  }
-  .mn-modern-banner .modern-banner .mn-banner-img {
-    height: 250px;
   }
   .mn-ofr-banners .mn-bnr-body .mn-bnr-detail {
     max-width: 200px;
@@ -5907,9 +5883,6 @@ button.btn-close.qty_close {
   }
 }
 @media screen and (max-width: 420px) {
-  .mn-modern-banner .modern-banner .mn-banner-img {
-    height: 200px;
-  }
   .mn-banner-contact .inner-banner .h4 {
     font-size: 22px;
   }
@@ -11290,6 +11263,24 @@ visibility: visible;
 }
 .sidebar2.mn-sidebar .mn-sidebar-body .mn-sb-list {
   margin: 40px 0 -15px;
+}
+
+.is-sticky {
+  position: fixed;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  animation: fixedNavibar .8s ease-in-out;
+}
+@keyframes fixedNavibar {
+  0% {
+    transform: translateY(-100%)
+  }
+  to {
+      transform: translateY(0)
+  }
 }
 @media screen and (max-width:767px){
   .iframe-map {
