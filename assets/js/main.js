@@ -35,6 +35,10 @@
             $(this).siblings('.mn-sb-drop').slideDown();
         }
     });
+    $('.sb-drop-item .btn-back').on("click", function () {
+        $(this).parent().siblings('.mn-drop-toggle').removeClass("active-nav");
+        $(this).parent().slideUp();
+    });
 
     /*  Mobile menu sidebar JS  */
     $(".mn-toggle-menu").on("click", function () {
@@ -49,13 +53,16 @@
     function ResponsiveMobilemsMenu() {
         var $msNav = $(".mn-menu-content, .overlay-menu"),
             $msNavSubMenu = $msNav.find(".sub-menu");
-        $msNavSubMenu.parent().prepend('<span class="menu-toggle"></span>');
+        $msNavSubMenu.siblings('a').prepend('<span class="menu-toggle"></span>');
 
         $msNav.on("click", "li a, .menu-toggle", function (e) {
             var $this = $(this);
             if ($this.attr("href") === "#" || $this.hasClass("menu-toggle")) {
                 e.preventDefault();
-                if ($this.siblings("ul:visible").length) {
+                if ($this.parent().hasClass("btn-back")) {
+                    $this.parent().parent().parent("li").removeClass("active");
+                    $this.parent().parent().slideUp();
+                } else if ($this.siblings("ul:visible").length) {
                     $this.parent("li").removeClass("active");
                     $this.siblings("ul").slideUp();
                     $this.parent("li").find("li").removeClass("active");
@@ -76,6 +83,7 @@
     }
 
     ResponsiveMobilemsMenu();
+
 
     /*== Main Slider ==*/
     $('.mn-hero-slider').owlCarousel({
