@@ -366,7 +366,7 @@
     /*== Category section ==*/
     $(".mn-cat").owlCarousel({
         margin: 24,
-        loop: true,
+        loop: false,
         dots: false,
         nav: false,
         smartSpeed: 500,
@@ -404,7 +404,7 @@
     /*== Product section ==*/
     $(".mn-product").owlCarousel({
         margin: 24,
-        loop: true,
+        loop: false,
         dots: true,
         nav: false,
         smartSpeed: 500,
@@ -440,7 +440,7 @@
     /*== Product section ==*/
     $(".mn-related").owlCarousel({
         margin: 24,
-        loop: true,
+        loop: false,
         dots: true,
         nav: false,
         smartSpeed: 500,
@@ -510,7 +510,7 @@
     /*== Blog section ==*/
     $(".mn-blog-carousel").owlCarousel({
         margin: 24,
-        loop: true,
+        loop: false,
         dots: true,
         nav: false,
         smartSpeed: 500,
