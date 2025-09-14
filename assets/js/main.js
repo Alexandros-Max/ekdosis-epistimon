@@ -257,7 +257,12 @@
     });
 
     /*== Product Image Zoom ==*/
-    $('.zoom-image-hover').zoom();
+
+    
+    function isTouchEnabled() { return !!document.createTouch; }
+    if ($('.zoom-image-hover').length && (isTouchEnabled) && ($(window).outerWidth() > 1199)) {
+        $('.zoom-image-hover').zoom();
+    }
 
     /*== single product Slider ==*/
     $('.single-product-cover').slick({
@@ -861,6 +866,29 @@
         $(this).addClass("active");
     });
 
+    
+
+    /*== Password toggle ==*/
+    $(".show-pass").on("click", function () {
+        $(this).toggleClass('active');
+        var input = $(this).siblings('input');
+        input.attr("type", function(index, attr) {
+            return attr === "password" ? "text" : "password";
+          });
+          
+    });
+
+
+    if ($('.user-type-selector').length){
+        $('.user-type-selector').change(function(){
+            if ($("#user_company").is(':checked')){
+                $('.company-info').removeClass('d-none');
+            } else {
+                $('.company-info').addClass('d-none');
+            }
+    
+        });
+    }
 
     /*== Footer ==*/
     if ($("#copyright_year").length) {
