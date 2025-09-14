@@ -44,7 +44,7 @@
 
 		<!-- Sidebar -->
 		<div class="mn-sidebar-overlay"></div>
-		<div class="mn-sidebar">
+		<div class="mn-sidebar sidebar-menu hasFullHeader">
 			<div class="mn-sidebar-body">
 				<button type="button" class="side-close" title="Close">×</button>
 				<ul class="mn-sb-list">
@@ -58,9 +58,11 @@
 					<li class="mn-sb-item sb-drop-item">
 						<a href="javascript:void(0)" class="mn-drop-toggle">
 							<img src="assets/img/menu-icon.svg" alt="Κατηγορία βιβλίων">
-							<span class="condense">Εκλαϊκευμένες Εκδόσεις<i class="drop-arrow ri-arrow-down-s-line"></i></span>
+							<span class="condense">Εκλαϊκευμένες Εκδόσεις<i class="drop-arrow ri-arrow-right-s-line"></i></span>
 						</a>
 						<ul class="mn-sb-drop">
+							<li class="list btn-back"><a href="#" class="sub-menu_link"><span class="ri-arrow-left-line"></span>Εκλαϊκευμένες Εκδόσεις</a></li>
+							<li class="list btn-all"><a href="shop.html" class="sub-menu_link">Όλα τα προϊόντα</a></li>
 							<li class="list"><a href="shop.html" class="mn-page-link drop">Αθλητισμός</a></li>
 							<li class="list"><a href="shop.html" class="mn-page-link drop">Διατροφή</a></li>
 							<li class="list"><a href="shop.html" class="mn-page-link drop">Ζωϊκό Βασίλειο</a></li>
@@ -77,9 +79,11 @@
 					<li class="mn-sb-item sb-drop-item">
 						<a href="javascript:void(0)" class="mn-drop-toggle">
 							<img src="assets/img/menu-icon-doctor.svg" alt="Κατηγορία βιβλίων">
-							<span class="condense">Ιατρική Βιβλιοθήκη<i class="drop-arrow ri-arrow-down-s-line"></i></span>
+							<span class="condense">Ιατρική Βιβλιοθήκη<i class="drop-arrow ri-arrow-right-s-line"></i></span>
 						</a>
 						<ul class="mn-sb-drop">
+							<li class="list btn-back"><a href="#" class="sub-menu_link"><span class="ri-arrow-left-line"></span>Ιατρική Βιβλιοθήκη</a></li>
+							<li class="list btn-all"><a href="shop.html" class="sub-menu_link">Όλα τα προϊόντα</a></li>
 							<li class="list"><a href="shop.html" class="mn-page-link drop">Αιματολογία</a></li>
 							<li class="list"><a href="shop.html" class="mn-page-link drop">Ακτινολογία</a></li>
 							<li class="list"><a href="shop.html" class="mn-page-link drop">Αναισθησιολογία</a></li>
@@ -132,18 +136,22 @@
 					<li class="mn-sb-item sb-drop-item">
 						<a href="javascript:void(0)" class="mn-drop-toggle">
 							<img src="assets/img/menu-icon-nurse.svg" alt="Κατηγορία βιβλίων">
-							<span class="condense">Νοσηλευτική Βιβλιοθήκη<i class="drop-arrow ri-arrow-down-s-line"></i></span>
+							<span class="condense">Νοσηλευτική Βιβλιοθήκη<i class="drop-arrow ri-arrow-right-s-line"></i></span>
 						</a>
 						<ul class="mn-sb-drop">
+							<li class="list btn-back"><a href="#" class="sub-menu_link"><span class="ri-arrow-left-line"></span>Νοσηλευτική Βιβλιοθήκη</a></li>
+							<li class="list btn-all"><a href="shop.html" class="sub-menu_link">Όλα τα προϊόντα</a></li>
 							<li class="list"><a href="shop.html" class="mn-page-link drop">Νοσηλευτική</a></li>
 						</ul>
 					</li>
 					<li class="mn-sb-item sb-drop-item">
 						<a href="javascript:void(0)" class="mn-drop-toggle">
 							<img src="assets/img/menu-icon-finance.svg" alt="Κατηγορία βιβλίων">
-							<span class="condense">Οικονομικές Επιστήμες<i class="drop-arrow ri-arrow-down-s-line"></i></span>
+							<span class="condense">Οικονομικές Επιστήμες<i class="drop-arrow ri-arrow-right-s-line"></i></span>
 						</a>
 						<ul class="mn-sb-drop">
+							<li class="list btn-back"><a href="#" class="sub-menu_link"><span class="ri-arrow-left-line"></span>Οικονομικές Επιστήμες</a></li>
+							<li class="list btn-all"><a href="shop.html" class="sub-menu_link">Όλα τα προϊόντα</a></li>
 							<li class="list"><a href="shop.html" class="mn-page-link drop">Δημόσια Οικονομικά</a></li>
 							<li class="list"><a href="shop.html" class="mn-page-link drop">Διαφήμιση και Δημόσιες Σχέσεις</a></li>
 							<li class="list"><a href="shop.html" class="mn-page-link drop">Διεθνή Οικονομικά</a></li>
@@ -167,14 +175,17 @@
 		</div>
 
 		<!-- Header -->
-		<header>
+		<header class="full-header">
 			<div class="mn-header">
 				<div class="mn-header-items">
 					<div class="left-header">
-						<a href="javascript:void(0)" class="mn-toggle-sidebar d-none d-xl-block">
-							<span class="outer-ring">
-								<span class="inner-ring"></span>
-							</span>
+						<a href="javascript:void(0)" class="mn-toggle-sidebar d-none d-xl-flex">
+							<div class="header-icon">
+								<i class="ri-menu-3-fill"></i>
+							</div>
+							<div class="menu-toggle-text">
+								Κατηγορίες Βιβλίων
+							</div>
 						</a>
 						<a href="index.html" class="logo order-md-1"><img src="assets/img/logo/logo.png" alt="logo"></a>
 						<a href="javascript:void(0)" class="mn-toggle-menu">
@@ -194,117 +205,97 @@
 												<li class="non-drop"><a href="shop.html">Αθλητικές Επιστήμες</a></li>
 												<li class="dropdown drop-list">
 													<a href="javascript:void(0)" class="dropdown-arrow">Εκλαϊκευμένες Εκδόσεις<i class="ri-arrow-down-s-line"></i></a>
-													<ul class="mega-menu d-block">
-														<li class="d-flex">
-															<span class="bg"></span>
-															<ul class="d-block mega-block">
-																<li><a href="shop.html">Αθλητισμός</a></li>
-																<li><a href="shop.html">Διατροφή</a></li>
-																<li><a href="shop.html">Ζωϊκό Βασίλειο</a></li>
-																<li><a href="shop.html">Οικογενειακός Ιατρός</a></li>
-																<li><a href="shop.html">Παιδικά</a></li>
-																<li><a href="shop.html">Ποικίλα Θέματα</a></li>
-																<li><a href="shop.html">Ποικίλα Θέματα</a></li>
-																<li><a href="shop.html">Πρώτες Βοήθειες</a></li>
-																<li><a href="shop.html">Υγεία</a></li>
-																<li><a href="shop.html">Χιούμορ</a></li>
-																<li><a href="shop.html">Ψυχολογία</a></li>
-															</ul>
-														</li>
+													<ul class="mega-menu">
+														<li><a href="shop.html">Αθλητισμός</a></li>
+														<li><a href="shop.html">Διατροφή</a></li>
+														<li><a href="shop.html">Ζωϊκό Βασίλειο</a></li>
+														<li><a href="shop.html">Οικογενειακός Ιατρός</a></li>
+														<li><a href="shop.html">Παιδικά</a></li>
+														<li><a href="shop.html">Ποικίλα Θέματα</a></li>
+														<li><a href="shop.html">Ποικίλα Θέματα</a></li>
+														<li><a href="shop.html">Πρώτες Βοήθειες</a></li>
+														<li><a href="shop.html">Υγεία</a></li>
+														<li><a href="shop.html">Χιούμορ</a></li>
+														<li><a href="shop.html">Ψυχολογία</a></li>
 													</ul>
 												</li>
 												<li class="dropdown drop-list">
 													<a href="javascript:void(0)" class="dropdown-arrow">Ιατρική Βιβλιοθήκη<i class="ri-arrow-down-s-line"></i></a>
-													<ul class="mega-menu d-block">
-														<li class="d-flex">
-															<span class="bg"></span>
-															<ul class="d-block mega-block">
-																<li><a href="shop.html">Αιματολογία</a></li>
-																<li><a href="shop.html">Ακτινολογία</a></li>
-																<li><a href="shop.html">Αναισθησιολογία</a></li>
-																<li><a href="shop.html">Ανατομική</a></li>
-																<li><a href="shop.html">Ανοσολογία</a></li>
-																<li><a href="shop.html">Παιδιατρική</a></li>
-																<li><a href="shop.html">Παθολογική Ανατομική</a></li>
-																<li><a href="shop.html">Παθολογία</a></li>
-																<li><a href="shop.html">Οφθαλμολογία</a></li>
-																<li><a href="shop.html">Ουρολογία</a></li>
-																<li><a href="shop.html">Ορθοπεδική</a></li>
-																<li><a href="shop.html">Οδοντιατρική</a></li>
-																<li><a href="shop.html">Ογκολογία</a></li>
-																<li><a href="shop.html">Νεφρολογία</a></li>
-																<li><a href="shop.html">Νευροχειρουργική</a></li>
-																<li><a href="shop.html">Νευρολογία-Ψυχιατρική</a></li>
-																<li><a href="shop.html">Μικροχειρουργική</a></li>
-																<li><a href="shop.html">Μικροβιολογία-Βακτηριολογία</a></li>
-																<li><a href="shop.html">Μαιευτική-Γυναικολογία</a></li>
-																<li><a href="shop.html">Λογοθεραπεία</a></li>
-																<li><a href="shop.html">Λεξικά</a></li>
-																<li><a href="shop.html">Ιστορία της Ιατρικής-Ανθρωπολογία</a></li>
-																<li><a href="shop.html">Ιστολογία-Εμβρυολογία</a></li>
-																<li><a href="shop.html">Ιατροδικαστική-Τοξικολογία</a></li>
-																<li><a href="shop.html">Εργαστηριακή Ιατρική</a></li>
-																<li><a href="shop.html">Εντατική Θεραπεία-Επείγουσα Ιατρική</a></li>
-																<li><a href="shop.html">Ενδοκρινολογία-Διαβητολογία</a></li>
-																<li><a href="shop.html">Εναλλακτική Ιατρική</a></li>
-																<li><a href="shop.html">Διάφορα</a></li>
-																<li><a href="shop.html">Δερματολογία</a></li>
-																<li><a href="shop.html">Διατροφή-Διαιτητική</a></li>
-																<li><a href="shop.html">Γλωσσολογία</a></li>
-																<li><a href="shop.html">Γεροντολογία</a></li>
-																<li><a href="shop.html">Γεωπονική</a></li>
-																<li><a href="shop.html">Γενική Ιατρική</a></li>
-																<li><a href="shop.html">Γαστρεντερολογία-Ηπατολογία</a></li>
-																<li><a href="shop.html">Βιοχημεία-Χημεία</a></li>
-																<li><a href="shop.html">Βιολογία-Γενετική</a></li>
-																<li><a href="shop.html">Φυσιολογία</a></li>
-																<li><a href="shop.html">Φυσικοθεραπεία</a></li>
-																<li><a href="shop.html">Φυσική</a></li>
-																<li><a href="shop.html">Φαρμακολογία</a></li>
-																<li><a href="shop.html">Σειρές</a></li>
-																<li><a href="shop.html">Ρευματολογία</a></li>
-																<li><a href="shop.html">Πνευμονολογία</a></li>
-																<li><a href="shop.html">Ωτορινολαρυγγολογία</a></li>
-																<li><a href="shop.html">Χειρουργική</a></li>
-															</ul>
-														</li>
+													<ul class="mega-menu">
+														<li><a href="shop.html">Αιματολογία</a></li>
+														<li><a href="shop.html">Ακτινολογία</a></li>
+														<li><a href="shop.html">Αναισθησιολογία</a></li>
+														<li><a href="shop.html">Ανατομική</a></li>
+														<li><a href="shop.html">Ανοσολογία</a></li>
+														<li><a href="shop.html">Παιδιατρική</a></li>
+														<li><a href="shop.html">Παθολογική Ανατομική</a></li>
+														<li><a href="shop.html">Παθολογία</a></li>
+														<li><a href="shop.html">Οφθαλμολογία</a></li>
+														<li><a href="shop.html">Ουρολογία</a></li>
+														<li><a href="shop.html">Ορθοπεδική</a></li>
+														<li><a href="shop.html">Οδοντιατρική</a></li>
+														<li><a href="shop.html">Ογκολογία</a></li>
+														<li><a href="shop.html">Νεφρολογία</a></li>
+														<li><a href="shop.html">Νευροχειρουργική</a></li>
+														<li><a href="shop.html">Νευρολογία-Ψυχιατρική</a></li>
+														<li><a href="shop.html">Μικροχειρουργική</a></li>
+														<li><a href="shop.html">Μικροβιολογία-Βακτηριολογία</a></li>
+														<li><a href="shop.html">Μαιευτική-Γυναικολογία</a></li>
+														<li><a href="shop.html">Λογοθεραπεία</a></li>
+														<li><a href="shop.html">Λεξικά</a></li>
+														<li><a href="shop.html">Ιστορία της Ιατρικής-Ανθρωπολογία</a></li>
+														<li><a href="shop.html">Ιστολογία-Εμβρυολογία</a></li>
+														<li><a href="shop.html">Ιατροδικαστική-Τοξικολογία</a></li>
+														<li><a href="shop.html">Εργαστηριακή Ιατρική</a></li>
+														<li><a href="shop.html">Εντατική Θεραπεία-Επείγουσα Ιατρική</a></li>
+														<li><a href="shop.html">Ενδοκρινολογία-Διαβητολογία</a></li>
+														<li><a href="shop.html">Εναλλακτική Ιατρική</a></li>
+														<li><a href="shop.html">Διάφορα</a></li>
+														<li><a href="shop.html">Δερματολογία</a></li>
+														<li><a href="shop.html">Διατροφή-Διαιτητική</a></li>
+														<li><a href="shop.html">Γλωσσολογία</a></li>
+														<li><a href="shop.html">Γεροντολογία</a></li>
+														<li><a href="shop.html">Γεωπονική</a></li>
+														<li><a href="shop.html">Γενική Ιατρική</a></li>
+														<li><a href="shop.html">Γαστρεντερολογία-Ηπατολογία</a></li>
+														<li><a href="shop.html">Βιοχημεία-Χημεία</a></li>
+														<li><a href="shop.html">Βιολογία-Γενετική</a></li>
+														<li><a href="shop.html">Φυσιολογία</a></li>
+														<li><a href="shop.html">Φυσικοθεραπεία</a></li>
+														<li><a href="shop.html">Φυσική</a></li>
+														<li><a href="shop.html">Φαρμακολογία</a></li>
+														<li><a href="shop.html">Σειρές</a></li>
+														<li><a href="shop.html">Ρευματολογία</a></li>
+														<li><a href="shop.html">Πνευμονολογία</a></li>
+														<li><a href="shop.html">Ωτορινολαρυγγολογία</a></li>
+														<li><a href="shop.html">Χειρουργική</a></li>
 													</ul>
 												</li>
 												<li class="dropdown drop-list">
 													<a href="javascript:void(0)" class="dropdown-arrow">Νοσηλευτική Βιβλιοθήκη<i class="ri-arrow-down-s-line"></i></a>
-													<ul class="mega-menu d-block">
-														<li class="d-flex">
-															<span class="bg"></span>
-															<ul class="d-block mega-block">
-																<li><a href="shop.html">Νοσηλευτική</a></li>
-															</ul>
-														</li>
+													<ul class="mega-menu">
+														<li><a href="shop.html">Νοσηλευτική</a></li>
 													</ul>
 												</li>
 												<li class="dropdown drop-list">
 													<a href="javascript:void(0)" class="dropdown-arrow">Οικονομικές Επιστήμες<i class="ri-arrow-down-s-line"></i></a>
-													<ul class="mega-menu d-block">
-														<li class="d-flex">
-															<span class="bg"></span>
-															<ul class="d-block mega-block">
-																<li><a href="shop.html">Δημόσια Οικονομικά</a></li>
-																<li><a href="shop.html">Διαφήμιση και Δημόσιες Σχέσεις</a></li>
-																<li><a href="shop.html">Διεθνή Οικονομικά</a></li>
-																<li><a href="shop.html">Εμπορική Αλληλογραφία</a></li>
-																<li><a href="shop.html">Κοινωνικές Επιστήμες</a></li>
-																<li><a href="shop.html">Λεξικά - Αγγλικά Επιστημών</a></li>
-																<li><a href="shop.html">Λογιστική</a></li>
-																<li><a href="shop.html">Μαθηματικά</a></li>
-																<li><a href="shop.html">Μακροοικονομική</a></li>
-																<li><a href="shop.html">Μάνατζμεντ</a></li>
-																<li><a href="shop.html">Μικροοικονομική</a></li>
-																<li><a href="shop.html">Οικονομικά</a></li>
-																<li><a href="shop.html">Οικονομικά της Εργασίας</a></li>
-																<li><a href="shop.html">Πληροφορική</a></li>
-																<li><a href="shop.html">Στατιστική</a></li>
-																<li><a href="shop.html">Χρηματοοικονομική</a></li>
-															</ul>
-														</li>
+													<ul class="mega-menu">
+														<li><a href="shop.html">Δημόσια Οικονομικά</a></li>
+														<li><a href="shop.html">Διαφήμιση και Δημόσιες Σχέσεις</a></li>
+														<li><a href="shop.html">Διεθνή Οικονομικά</a></li>
+														<li><a href="shop.html">Εμπορική Αλληλογραφία</a></li>
+														<li><a href="shop.html">Κοινωνικές Επιστήμες</a></li>
+														<li><a href="shop.html">Λεξικά - Αγγλικά Επιστημών</a></li>
+														<li><a href="shop.html">Λογιστική</a></li>
+														<li><a href="shop.html">Μαθηματικά</a></li>
+														<li><a href="shop.html">Μακροοικονομική</a></li>
+														<li><a href="shop.html">Μάνατζμεντ</a></li>
+														<li><a href="shop.html">Μικροοικονομική</a></li>
+														<li><a href="shop.html">Οικονομικά</a></li>
+														<li><a href="shop.html">Οικονομικά της Εργασίας</a></li>
+														<li><a href="shop.html">Πληροφορική</a></li>
+														<li><a href="shop.html">Στατιστική</a></li>
+														<li><a href="shop.html">Χρηματοοικονομική</a></li>
 													</ul>
 												</li>
 											</ul>
@@ -323,118 +314,111 @@
 								<div class="mn-menu-content">
 									<ul>
 										<li>
-											<a href="javascript:void(0)">Βιβλία</a>
+											<a href="#">Κατηγορίες Βιβλίων</a>
 											<ul class="sub-menu">
+												<li class="btn-back"><a href="#" class="sub-menu_link"><span class="ri-arrow-left-line"></span>Πίσω</a></li>
+												<li><a href="shop.html">Αθλητικές Επιστήμες</a></li>
 												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
+													<a href="#">Εκλαϊκευμένες Εκδόσεις</a>
 													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-													</ul>
-												</li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
-												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
-													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-													</ul>
-												</li>
-												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
-													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-													</ul>
-												</li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
-												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
-													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
+														<li class="btn-back"><a href="#" class="sub-menu_link"><span class="ri-arrow-left-line"></span>Πίσω</a></li>
+														<li class="btn-all"><a href="shop.html" class="sub-menu_link">Όλα τα προϊόντα</a></li>
+														<li><a href="shop.html">Αθλητισμός</a></li>
+														<li><a href="shop.html">Διατροφή</a></li>
+														<li><a href="shop.html">Ζωϊκό Βασίλειο</a></li>
+														<li><a href="shop.html">Οικογενειακός Ιατρός</a></li>
+														<li><a href="shop.html">Παιδικά</a></li>
+														<li><a href="shop.html">Ποικίλα Θέματα</a></li>
+														<li><a href="shop.html">Ποικίλα Θέματα</a></li>
+														<li><a href="shop.html">Πρώτες Βοήθειες</a></li>
+														<li><a href="shop.html">Υγεία</a></li>
+														<li><a href="shop.html">Χιούμορ</a></li>
+														<li><a href="shop.html">Ψυχολογία</a></li>
 													</ul>
 												</li>
 												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
+													<a href="#">Ιατρική Βιβλιοθήκη</a>
 													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-													</ul>
-												</li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
-												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
-													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-													</ul>
-												</li>
-												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
-													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-													</ul>
-												</li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
-												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
-													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-													</ul>
-												</li>
-												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
-													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-													</ul>
-												</li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
-												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
-													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-													</ul>
-												</li>
-												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
-													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-													</ul>
-												</li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
-												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
-													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
+														<li class="btn-back"><a href="#" class="sub-menu_link"><span class="ri-arrow-left-line"></span>Πίσω</a></li>
+														<li class="btn-all"><a href="shop.html" class="sub-menu_link">Όλα τα προϊόντα</a></li>
+														<li><a href="shop.html">Αιματολογία</a></li>
+														<li><a href="shop.html">Ακτινολογία</a></li>
+														<li><a href="shop.html">Αναισθησιολογία</a></li>
+														<li><a href="shop.html">Ανατομική</a></li>
+														<li><a href="shop.html">Ανοσολογία</a></li>
+														<li><a href="shop.html">Παιδιατρική</a></li>
+														<li><a href="shop.html">Παθολογική Ανατομική</a></li>
+														<li><a href="shop.html">Παθολογία</a></li>
+														<li><a href="shop.html">Οφθαλμολογία</a></li>
+														<li><a href="shop.html">Ουρολογία</a></li>
+														<li><a href="shop.html">Ορθοπεδική</a></li>
+														<li><a href="shop.html">Οδοντιατρική</a></li>
+														<li><a href="shop.html">Ογκολογία</a></li>
+														<li><a href="shop.html">Νεφρολογία</a></li>
+														<li><a href="shop.html">Νευροχειρουργική</a></li>
+														<li><a href="shop.html">Νευρολογία-Ψυχιατρική</a></li>
+														<li><a href="shop.html">Μικροχειρουργική</a></li>
+														<li><a href="shop.html">Μικροβιολογία-Βακτηριολογία</a></li>
+														<li><a href="shop.html">Μαιευτική-Γυναικολογία</a></li>
+														<li><a href="shop.html">Λογοθεραπεία</a></li>
+														<li><a href="shop.html">Λεξικά</a></li>
+														<li><a href="shop.html">Ιστορία της Ιατρικής-Ανθρωπολογία</a></li>
+														<li><a href="shop.html">Ιστολογία-Εμβρυολογία</a></li>
+														<li><a href="shop.html">Ιατροδικαστική-Τοξικολογία</a></li>
+														<li><a href="shop.html">Εργαστηριακή Ιατρική</a></li>
+														<li><a href="shop.html">Εντατική Θεραπεία-Επείγουσα Ιατρική</a></li>
+														<li><a href="shop.html">Ενδοκρινολογία-Διαβητολογία</a></li>
+														<li><a href="shop.html">Εναλλακτική Ιατρική</a></li>
+														<li><a href="shop.html">Διάφορα</a></li>
+														<li><a href="shop.html">Δερματολογία</a></li>
+														<li><a href="shop.html">Διατροφή-Διαιτητική</a></li>
+														<li><a href="shop.html">Γλωσσολογία</a></li>
+														<li><a href="shop.html">Γεροντολογία</a></li>
+														<li><a href="shop.html">Γεωπονική</a></li>
+														<li><a href="shop.html">Γενική Ιατρική</a></li>
+														<li><a href="shop.html">Γαστρεντερολογία-Ηπατολογία</a></li>
+														<li><a href="shop.html">Βιοχημεία-Χημεία</a></li>
+														<li><a href="shop.html">Βιολογία-Γενετική</a></li>
+														<li><a href="shop.html">Φυσιολογία</a></li>
+														<li><a href="shop.html">Φυσικοθεραπεία</a></li>
+														<li><a href="shop.html">Φυσική</a></li>
+														<li><a href="shop.html">Φαρμακολογία</a></li>
+														<li><a href="shop.html">Σειρές</a></li>
+														<li><a href="shop.html">Ρευματολογία</a></li>
+														<li><a href="shop.html">Πνευμονολογία</a></li>
+														<li><a href="shop.html">Ωτορινολαρυγγολογία</a></li>
+														<li><a href="shop.html">Χειρουργική</a></li>
 													</ul>
 												</li>
 												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
+													<a href="#">Νοσηλευτική Βιβλιοθήκη</a>
 													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
+														<li class="btn-back"><a href="#" class="sub-menu_link"><span class="ri-arrow-left-line"></span>Πίσω</a></li>
+														<li class="btn-all"><a href="shop.html" class="sub-menu_link">Όλα τα προϊόντα</a></li>
+														<li><a href="shop.html">Νοσηλευτική</a></li>
 													</ul>
 												</li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
-												<li><a href="shop.html">Κατηγορία βιβλίων</a></li>
 												<li>
-													<a href="javascript:void(0)">Κατηγορία βιβλίων</a>
+													<a href="#">Οικονομικές Επιστήμες</a>
 													<ul class="sub-menu">
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
-														<li><a href="shop.html">Όνομα υποκατηγορίας</a></li>
+														<li class="btn-back"><a href="#" class="sub-menu_link"><span class="ri-arrow-left-line"></span>Πίσω</a></li>
+														<li class="btn-all"><a href="shop.html" class="sub-menu_link">Όλα τα προϊόντα</a></li>
+														<li><a href="shop.html">Δημόσια Οικονομικά</a></li>
+														<li><a href="shop.html">Διαφήμιση και Δημόσιες Σχέσεις</a></li>
+														<li><a href="shop.html">Διεθνή Οικονομικά</a></li>
+														<li><a href="shop.html">Εμπορική Αλληλογραφία</a></li>
+														<li><a href="shop.html">Κοινωνικές Επιστήμες</a></li>
+														<li><a href="shop.html">Λεξικά - Αγγλικά Επιστημών</a></li>
+														<li><a href="shop.html">Λογιστική</a></li>
+														<li><a href="shop.html">Μαθηματικά</a></li>
+														<li><a href="shop.html">Μακροοικονομική</a></li>
+														<li><a href="shop.html">Μάνατζμεντ</a></li>
+														<li><a href="shop.html">Μικροοικονομική</a></li>
+														<li><a href="shop.html">Οικονομικά</a></li>
+														<li><a href="shop.html">Οικονομικά της Εργασίας</a></li>
+														<li><a href="shop.html">Πληροφορική</a></li>
+														<li><a href="shop.html">Στατιστική</a></li>
+														<li><a href="shop.html">Χρηματοοικονομική</a></li>
 													</ul>
 												</li>
 											</ul>
