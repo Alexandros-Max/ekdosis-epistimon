@@ -758,43 +758,50 @@
 										<label>Πόλη *</label>
 										<input type="text" name="city" placeholder="π.χ. Αθήνα">
 									</span>
-									<span class="mn-register-wrap mn-register-half">
-										<label>Τ.Κ. </label>
-										<span class="form-note">
-											<span class="form-note-btn">
-												?
+									<div class="mn-register-wrap-row">
+										<span class="mn-register-wrap mn-register-half">
+											<label>Τ.Κ. </label>
+											<span class="form-note">
+												<span class="form-note-btn">
+													?
+												</span>
+												<span class="form-note-input">Εισάγετε τον Ταχυδρομικό Κώδικα για να <b>συμπληρωθούν αυτόματα η χώρα, ο νομός και η περιοχή σας</b>. Βεβαιωθείτε ότι ο Ταχυδρομικός Κώδικας είναι σωστός για να διασφαλίσετε ακριβή στοιχεία. <b>Η περιοχή εμφανίζεται ως λίστα</b> με διαθέσιμες επιλογές που αντιστοιχούν στον ΤΚ που εισάγατε.</span>
 											</span>
-											<span class="form-note-input">Εισάγετε τον Ταχυδρομικό Κώδικα για να <b>συμπληρωθούν αυτόματα η χώρα, ο νομός και η περιοχή σας</b>. Βεβαιωθείτε ότι ο Ταχυδρομικός Κώδικας είναι σωστός για να διασφαλίσετε ακριβή στοιχεία. <b>Η περιοχή εμφανίζεται ως λίστα</b> με διαθέσιμες επιλογές που αντιστοιχούν στον ΤΚ που εισάγατε.</span>
+											<input type="text" name="postalcode" placeholder="π.χ. 123 45">
 										</span>
-										<input type="text" name="postalcode" placeholder="π.χ. 123 45">
-									</span>
-									<span class="mn-register-wrap mn-register-half">
-										<label>Χώρα *</label>
-										<span class="form-note">
-											<span class="form-note-btn">
-												?
+										<span class="mn-register-wrap mn-register-half">
+											<label>Χώρα *</label>
+											<span class="form-note">
+												<span class="form-note-btn">
+													?
+												</span>
+												<span class="form-note-input">Αν βρίσκεστε σε άλλη χώρα, για παραγγελίες παρακαλώ επικοινωνήστε μαζί μας</span>
 											</span>
-											<span class="form-note-input">Αν βρίσκεστε σε άλλη χώρα, για παραγγελίες παρακαλώ επικοινωνήστε μαζί μας</span>
+											<div class="form-special-input not-allowed">
+												<span class="country-name"></span>
+											</div>
+											<input type="hidden" name="country" placeholder="π.χ. Ελλάδα">
 										</span>
-										<div class="form-special-input not-allowed">
-											<span class="country-name"></span>
-										</div>
-										<input type="hidden" name="country" placeholder="π.χ. Ελλάδα">
-									</span>
-									<span class="mn-register-wrap mn-register-half">
-										<label>Περιοχή *</label>
-										<div class="form-special-input not-allowed">
-											<span class="country-name"></span>
-										</div>
-										<input type="hidden" name="region" placeholder="π.χ. Νέα Σμύρνη">
-									</span>
-									<span class="mn-register-wrap mn-register-half">
-										<label>Νομός *</label>
-										<div class="form-special-input not-allowed">
-											<span class="country-name"></span>
-										</div>
-										<input type="hidden" name="state" placeholder="π.χ. Αττική">
-									</span>
+										<span class="mn-register-wrap mn-register-half">
+											<label>Περιοχή *</label>
+											<div class="select-input-box">
+												
+											</div>
+											<select name="area_id" class="">
+												<option value="49" selected="">ΑΓΙΟΣ ΔΗΜΗΤΡΙΟΣ</option>
+												<option value="43" selected="">ΚΑΛΛΙΘΕΑ</option>
+												<option value="44" selected="">ΜΟΣΧΑΤΟ</option>
+											</select>
+											<input type="hidden" name="region" placeholder="π.χ. Νέα Σμύρνη">
+										</span>
+										<span class="mn-register-wrap mn-register-half">
+											<label>Νομός *</label>
+											<div class="form-special-input not-allowed">
+												<span class="country-name"></span>
+											</div>
+											<input type="hidden" name="state" placeholder="π.χ. Αττική">
+										</span>
+									</div>
 									
 									<div class="mn-register-wrap">
 										<div class="mn-remember">
