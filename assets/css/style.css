@@ -3353,13 +3353,16 @@ footer {
   text-transform: unset;
 }
 .mn-footer .footer-top .mn-footer-contact .mn-footer-widget .mn-footer-links .mn-footer-link span {
-  width: 25px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.mn-footer .footer-top .mn-footer-contact .mn-footer-widget .mn-footer-links .mn-footer-link span lord-icon {
+  width: 40px;
+  height: 40px;
 }
 .mn-footer .footer-top .mn-footer-contact .mn-footer-widget .mn-footer-links .mn-footer-link .mt-15px {
   margin-top: 15px;
@@ -3381,10 +3384,10 @@ footer {
   margin-bottom: 0;
 }
 .mn-footer .footer-top .mn-footer-social .mn-footer-widget .mn-footer-links .mn-footer-link a {
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
-  background-color: var(--color-2);
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3396,11 +3399,9 @@ footer {
           justify-content: center;
   font-size: 15px;
 }
-.mn-footer .footer-top .mn-footer-social .mn-footer-widget .mn-footer-links .mn-footer-link a:hover {
-  background-color: var(--color-4);
-}
-.mn-footer .footer-top .mn-footer-social .mn-footer-widget .mn-footer-links .mn-footer-link a:hover i {
-  color: var(--color-2);
+.mn-footer .footer-top .mn-footer-social .mn-footer-widget .mn-footer-links .mn-footer-link a lord-icon {
+  width: 100%;
+  height: 100%;
 }
 .mn-footer .footer-top .mn-footer-social .mn-footer-widget .mn-footer-links .mn-footer-link a i {
   font-size: 16px;
@@ -5219,16 +5220,16 @@ button.btn-close.qty_close {
   background-size: 100%;
 }
 .mn-product-card .mn-product-img .mn-img .mn-options ul li {
-  margin: 5px;
+  margin: 10px;
 }
 .mn-product-card .mn-product-img .mn-img .mn-options ul li a {
-  line-height: 16px;
+  line-height: 26px;
 }
 .mn-product-card .mn-product-img .mn-img .mn-options ul li a i {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: var(--color-2);
-  font-size: 20px;
+  font-size: 26px;
 }
 .mn-product-card .mn-product-img .mn-img .mn-options ul li a:hover i {
   color: var(--color-1);
@@ -8491,6 +8492,7 @@ button.btn-close.qty_close {
 .mn-contact .mn-contact-detail .mn-box .icon {
   width: 70px;
   height: 70px;
+  padding: 10px;
   margin-right: 15px;
   background-color: var(--color-1);
   color: white;
@@ -8510,17 +8512,14 @@ button.btn-close.qty_close {
   border-radius: 15px;
   transition: all .4s ease-in-out;
 }
-.mn-contact .mn-contact-detail .mn-box .icon svg {
-  width: 36px;
+.mn-contact .mn-contact-detail .mn-box .icon lord-icon {
+  height: 100%;
+  width: 100%;
 }
 .mn-social-link a {
   display: flex;
-  width: 64px;
-  height: 64px;
-  background-color: var(--color-1);
-  border-radius: 4px;
-  color: white;
-  border-radius: 15px;
+  width: 70px;
+  height: 70px;
   justify-content: center;
   align-items: center;
 }
@@ -8530,13 +8529,9 @@ button.btn-close.qty_close {
   align-items: center;
   gap: 15px;
 }
-.mn-social-link a i {
-  font-size: 30px;
-}
-.mn-contact .mn-contact-detail .mn-box .detail:hover .icon,
-.mn-contact .mn-contact-detail .mn-box .mn-social-link a:hover {
-  background-color: var(--color-4);
-  color: black;
+.mn-social-link a lord-icon {
+  width: 100%;
+  height: 100%;
 }
 /* Responsive Contact page CSS */
 @media only screen and (max-width: 991px) {
@@ -8561,6 +8556,7 @@ button.btn-close.qty_close {
   .mn-contact .mn-contact-detail .mn-box .icon {
     width: 50px;
     height: 50px;
+    padding: 5px;
     margin: 0 0 15px 0;
   }
   .mn-contact .mn-contact-detail .mn-box .icon i {
@@ -10415,8 +10411,11 @@ button.btn-close.qty_close {
   Register Page CSS
 ---------------------------------------------------*/
 .mn-register-wrapper {
-  max-width: 934px;
+  max-width: 900px;
   margin: 0 auto 0;
+}
+.login-page .mn-register-wrapper {
+  max-width: 600px;
 }
 .mn-register-wrapper .mn-register-container {
   border: 1px solid #e5e5e5;
