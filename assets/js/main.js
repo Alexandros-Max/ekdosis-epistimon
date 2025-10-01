@@ -27,28 +27,26 @@
     $('.mn-drop-toggle').on("click", function () {
         if ($(this).hasClass("active-nav")) {
             $('.mn-drop-toggle').removeClass("active-nav");
-            $('.mn-drop-toggle').siblings('.mn-sb-drop').slideUp();
         } else {
             $('.mn-drop-toggle').removeClass("active-nav");
-            $('.mn-drop-toggle').siblings('.mn-sb-drop').slideUp();
             $(this).addClass("active-nav");
-            $(this).siblings('.mn-sb-drop').slideDown();
         }
     });
     $('.sb-drop-item .btn-back').on("click", function () {
         $(this).parent().siblings('.mn-drop-toggle').removeClass("active-nav");
-        $(this).parent().slideUp();
     });
 
     /*  Mobile menu sidebar JS  */
     $(".mn-toggle-menu").on("click", function () {
         $(".mn-mobile-menu-overlay").fadeIn();
         $(".mn-mobile-menu").addClass("mn-menu-open");
+        $("html,body").addClass("menu-is-open");
     });
 
     $(".mn-mobile-menu-overlay, .mn-close-menu").on("click", function () {
         $(".mn-mobile-menu-overlay").fadeOut();
         $(".mn-mobile-menu").removeClass("mn-menu-open");
+        $("html,body").removeClass("menu-is-open");
     });
     function ResponsiveMobilemsMenu() {
         var $msNav = $(".mn-menu-content, .overlay-menu"),
@@ -60,14 +58,13 @@
             if ($this.attr("href") === "#" || $this.hasClass("menu-toggle")) {
                 e.preventDefault();
                 if ($this.parent().hasClass("btn-back")) {
+                    console.log('a');
                     $this.parent().parent().parent("li").removeClass("active");
-                    $this.parent().parent().slideUp();
-                } else if ($this.siblings("ul:visible").length) {
-                    $this.parent("li").removeClass("active");
-                    $this.siblings("ul").slideUp();
-                    $this.parent("li").find("li").removeClass("active");
-                    $this.parent("li").find("ul:visible").slideUp();
+                    //$this.parent().parent().slideUp();
+                    $this.parent().parent().removeClass("is-active");
+                
                 } else {
+                    console.log('c');
                     $this.parent("li").addClass("active");
                     $this
                         .closest("li")
@@ -75,8 +72,10 @@
                         .removeClass("active")
                         .find("li")
                         .removeClass("active");
-                    $this.closest("li").siblings("li").find("ul:visible").slideUp();
-                    $this.siblings("ul").slideDown();
+                    //$this.closest("li").siblings("li").find("ul:visible").slideUp();
+                    $this.closest("li").siblings("li").find("ul:visible").removeClass("is-active");
+                    //$this.siblings("ul").slideDown();
+                    $this.siblings("ul").addClass("is-active");
                 }
             }
         });
