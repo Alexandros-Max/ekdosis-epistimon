@@ -657,18 +657,6 @@
         });
     }
 
-    // Header Sticky
-    $(window).bind('scroll', function () {
-        if (($('body').outerHeight()) > ($(window).outerHeight() + 150)){
-            if ($(window).scrollTop() > 130) {
-                $('header').addClass('is-sticky');
-            } else {
-                $('header').removeClass('is-sticky');
-            }
-        } else {
-            $('header').removeClass('is-sticky');
-        }
-    });
 
 
 })(jQuery);
