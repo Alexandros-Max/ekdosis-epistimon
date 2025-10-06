@@ -344,22 +344,25 @@
     });
 
     /*== Product section ==*/
+
     $(".mn-related").owlCarousel({
         margin: 24,
         loop: false,
-        dots: true,
-        nav: false,
+        dots: false,
+        nav: true,
         smartSpeed: 500,
         autoplayTimeout: 3000,
         items: 1,
         responsiveClass: true,
         responsive: {
             0: {
-                items: 1.5,
+                //items: 1,
+                autoWidth: true,
                 margin: 12,
             },
             461: {
-                items: 1.5,
+                //items: 1.5,
+                autoWidth: true,
             },
             768: {
                 items: 3,
