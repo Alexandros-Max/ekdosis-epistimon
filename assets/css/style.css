@@ -5373,17 +5373,15 @@ button.btn-close.qty_close {
   border: 1px solid #e5e5e5;
 }
 .mn-ser-inner .mn-service-image {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  width: 70px;
+  height: 70px;
 }
-.mn-ser-inner .mn-service-image svg {
-  width: 50px;
-  height: 50px;
-  line-height: 0;
+.mn-ser-inner .mn-service-image lord-icon {
+  width: 100%;
+  height: 100%;
 }
-.mn-ser-inner .mn-service-image svg path {
-  fill: var(--color-1);
-}
-.mn-service-desc h3 {
+.mn-service-desc .h3 {
   font-family: var(--font-body);
   font-size: 18px;
   font-weight: 700;
@@ -5393,9 +5391,6 @@ button.btn-close.qty_close {
 }
 .mn-service-desc p {
   margin: 0;
-  font-size: 14px;
-  color: #999;
-  line-height: 1.5;
   letter-spacing: 0.5px;
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Limit to 2 lines */
@@ -11222,8 +11217,8 @@ visibility: visible;
   width: 26px;
   height: 26px;
 }
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev {
+.mn-related.owl-carousel .owl-nav button.owl-next,
+.mn-related.owl-carousel .owl-nav button.owl-prev {
   height: 40px;
   width: 40px;
   font-size: 30px;
@@ -11234,10 +11229,10 @@ visibility: visible;
   align-items: center;
   justify-content: center;
 }
-.owl-carousel .owl-nav button.owl-prev {
+.mn-related.owl-carousel .owl-nav button.owl-prev {
   padding-right: 2px !important;
 }
-.owl-carousel .owl-nav button.owl-next {
+.mn-related.owl-carousel .owl-nav button.owl-next {
   padding-left: 2px !important;
 }
 @media screen and (max-width:1699px){
@@ -11264,8 +11259,8 @@ visibility: visible;
     width: 50px;
     height: 50px;
   }
-  .owl-carousel .owl-nav button.owl-next,
-  .owl-carousel .owl-nav button.owl-prev {
+  .mn-related.owl-carousel .owl-nav button.owl-next,
+  .mn-related.owl-carousel .owl-nav button.owl-prev {
     height: 30px;
     width: 30px;
     font-size: 23px;
