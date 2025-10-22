@@ -163,8 +163,6 @@
     });
 
     /*== Product Image Zoom ==*/
-
-    
     function isTouchEnabled() { return !!document.createTouch; }
     if ($('.zoom-image-hover').length && (isTouchEnabled) && ($(window).outerWidth() > 1199)) {
         $('.zoom-image-hover').zoom();
@@ -201,111 +199,6 @@
         $('.single-product-cover').slick('setPosition');
     });
 
-    /*== Add More Product slider section (Single Product Page) ==*/
-    $('.mn-add-more-slider').owlCarousel({
-        margin: 24,
-        loop: true,
-        dots: false,
-        nav: false,
-        smartSpeed: 1500,
-        autoplay: false,
-        items: 3,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 2
-            },
-            768: {
-                items: 2
-            },
-            992: {
-                items: 2
-            },
-            1200: {
-                items: 3
-            },
-            1400: {
-                items: 3
-            }
-        }
-    });
-
-    /*== Price Range slider ( Shop page ) == */
-    const slider = document.getElementById('mn-sliderPrice');
-    if (slider) {
-        const rangeMin = parseInt(slider.dataset.min);
-        const rangeMax = parseInt(slider.dataset.max);
-        const step = parseInt(slider.dataset.step);
-        const filterInputs = document.querySelectorAll('input.filter__input');
-
-        noUiSlider.create(slider, {
-            start: [rangeMin, rangeMax],
-            connect: true,
-            step: step,
-            range: {
-                'min': rangeMin,
-                'max': rangeMax
-            },
-
-            // make numbers whole
-            format: {
-                to: value => value,
-                from: value => value
-            }
-        });
-
-        // bind inputs with noUiSlider 
-        slider.noUiSlider.on('update', (values, handle) => {
-            filterInputs[handle].value = values[handle];
-        });
-
-        filterInputs.forEach((input, indexInput) => {
-            input.addEventListener('change', () => {
-                slider.noUiSlider.setHandle(indexInput, input.value);
-            })
-        });
-    }
-
-    /*== Category section ==*/
-    $(".mn-cat").owlCarousel({
-        margin: 24,
-        loop: false,
-        dots: false,
-        nav: false,
-        smartSpeed: 500,
-        autoplayTimeout: 3000,
-        items: 3,
-        autoHeight: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1.5,
-                margin: 12,
-            },
-            421: {
-                items: 1.5,
-                margin: 12,
-            },
-            768: {
-                items: 3,
-            },
-            992: {
-                items: 4,
-            },
-            1200: {
-                items: 4,
-            },
-            1400: {
-                items: 4,
-            },
-            1600: {
-                items: 5,
-            }
-        },
-    });
 
     /*== Product section ==*/
     $(".mn-product").owlCarousel({
@@ -382,21 +275,6 @@
         },
     });
 
-    /*== Quick view ==*/
-    $(".single-slide-quickview").owlCarousel({
-        loop: true,
-        margin: 0,
-        responsiveClass: true,
-        dots: false,
-        nav: false,
-        pagination: false,
-        autoplay: true,
-        items: 1,
-        autoplaySpeed: 2000,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: false,
-    });
-
     /*== Tooltips ==*/
     $(".mn-modern-banner").owlCarousel({
         loop: true,
@@ -416,130 +294,12 @@
         },
     });
 
-    /*== Blog section ==*/
-    $(".mn-blog-carousel").owlCarousel({
-        margin: 24,
-        loop: false,
-        dots: true,
-        nav: false,
-        smartSpeed: 500,
-        autoplayTimeout: 3000,
-        items: 1,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                dots: false,
-            },
-            461: {
-                items: 2,
-            },
-            576: {
-                items: 2,
-            },
-            768: {
-                items: 3,
-            },
-            992: {
-                items: 3,
-            },
-            1200: {
-                items: 4,
-            },
-            1400: {
-                items: 4,
-            },
-        },
-    });
 
-    /*== Testimonial Slider ==*/
-    $('.mn-testimonial-slider').owlCarousel({
-        margin: 0,
-        loop: true,
-        dots: true,
-        nav: false,
-        animateOut: 'fadeOut',
-        smartSpeed: 1000,
-        autoplay: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            1367: {
-                items: 1
-            }
-        }
-    });
-
-    /*== Team (About Page) ==*/
-    $('.mn-team').owlCarousel({
-        margin: 30,
-        loop: true,
-        dots: true,
-        nav: false,
-        smartSpeed: 1000,
-        autoplay: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                dots: false,
-            },
-            461: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            992: {
-                items: 4
-            },
-            1200: {
-                items: 5
-            },
-            1400: {
-                items: 5
-            }
-        }
-    });
-
-
-
-    /*== Cart Page Qty Plus Minus Button ==*/
-    var CartQtyPlusMinus = $(".cart-qty-plus-minus");
-    CartQtyPlusMinus.append('<div class="mn_cart_qtybtn"><div class="inc mn_qtybtn">+</div><div class="dec mn_qtybtn">-</div></div>');
-    $(".cart-qty-plus-minus .mn_cart_qtybtn .mn_qtybtn").on("click", function () {
-        var $cartqtybutton = $(this);
-        var CartQtyoldValue = $cartqtybutton.parent().parent().find("input").val();
-        if ($cartqtybutton.text() === "+") {
-            var CartQtynewVal = parseFloat(CartQtyoldValue) + 1;
-        } else {
-
-            if (CartQtyoldValue > 1) {
-                var CartQtynewVal = parseFloat(CartQtyoldValue) - 1;
-            } else {
-                CartQtynewVal = 1;
-            }
-        }
-        $cartqtybutton.parent().parent().find("input").val(CartQtynewVal);
-    });
 
     /*== Accordians toggle (faq page) ==*/
     $('.mn-accordion-header').on("click", function () {
         $(this).parent().siblings().children(".mn-accordion-body").slideUp();
         $(this).parent().find(".mn-accordion-body").slideToggle();
-    });
-
-    /*== Instagram slider & Category slider & Tooltips ==*/
-    $(function () {
-        $('.insta-auto, .cat-auto').infiniteslide({
-            direction: 'left',
-            speed: 50,
-            clone: 10
-        });
-
-        $('[data-toggle="tooltip"]').tooltip();
     });
 
     /*== Tooltips ==*/
